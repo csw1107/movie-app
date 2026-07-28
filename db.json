@@ -1,0 +1,106 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "인터스텔라",
+      "genre": "SF",
+      "director": "크리스토퍼 놀란",
+      "year": 2014,
+      "poster": "https://picsum.photos/200/300?random=1",
+      "summary": "우주로 떠나는 이야기",
+      "rating": 4.8,
+      "reviewCount": 2,
+      "liked": true
+    },
+    {
+      "id": 2,
+      "title": "기생충",
+      "genre": "드라마",
+      "director": "봉준호",
+      "year": 2019,
+      "poster": "https://picsum.photos/200/300?random=2",
+      "summary": "두 가족의 이야기",
+      "rating": 4.6,
+      "reviewCount": 1,
+      "liked": false
+    },
+    {
+      "id": 3,
+      "title": "매드맥스",
+      "genre": "액션",
+      "director": "조지 밀러",
+      "year": 2015,
+      "poster": "https://picsum.photos/200/300?random=3",
+      "summary": "사막 위의 추격전",
+      "rating": 4.3,
+      "reviewCount": 0,
+      "liked": true
+    },
+    {
+      "id": 4,
+      "title": "라라랜드",
+      "genre": "로맨스",
+      "director": "데이미언 셔젤",
+      "year": 2016,
+      "poster": "https://picsum.photos/200/300?random=4",
+      "summary": "꿈과 사랑 사이",
+      "rating": 4.5,
+      "reviewCount": 1,
+      "liked": false
+    },
+    {
+      "id": 5,
+      "title": "듄",
+      "genre": "SF",
+      "director": "드니 빌뇌브",
+      "year": 2021,
+      "poster": "https://picsum.photos/200/300?random=5",
+      "summary": "모래 행성의 서사",
+      "rating": 4.2,
+      "reviewCount": 0,
+      "liked": false
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "author": "홍길동",
+      "score": 5,
+      "content": "인생 영화",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "author": "김철수",
+      "score": 4,
+      "content": "음악이 좋아요",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "id": 3,
+      "movieId": 2,
+      "author": "이영희",
+      "score": 5,
+      "content": "몰입감 최고",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "id": 4,
+      "movieId": 4,
+      "author": "박민수",
+      "score": 4,
+      "content": "영상미가 예쁨",
+      "createdAt": "2026-07-20"
+    },
+    {
+      "movieId": 1,
+      "author": "dffd",
+      "score": 5,
+      "content": "dfdf",
+      "createdAt": "2026-07-22",
+      "id": 5
+    }
+  ]
+}
