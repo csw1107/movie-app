@@ -1,75 +1,33 @@
-# React + TypeScript + Vite
+# movie-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+영화 정보를 검색하고 목록으로 볼 수 있는 웹 애플리케이션입니다.
 
-Currently, two official plugins are available:
+## 만든 방법
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+생성형 AI를 활용해 개발했습니다.
+화면 구성과 기본 로직은 AI로 빠르게 작성하고,
+생성된 코드를 직접 실행하며 동작을 확인하고 수정했습니다.
 
-## React Compiler
+### 직접 확인하고 수정한 부분
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 【여기를 채우세요】
+- 【여기를 채우세요】
 
-## Expanding the ESLint configuration
+AI가 만든 코드는 정상적인 흐름은 잘 처리하지만,
+데이터가 비어 있거나 예상과 다른 경우의 처리가 빠져 있을 때가 있었습니다.
+그래서 결과물이 그럴듯해 보일수록 한 번 더 확인하게 되었습니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 기술 스택
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React + TypeScript
+- Vite
+- json-server (로컬 API)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 개발 환경
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Ubuntu 24.04 서버에 VS Code Remote-SSH로 접속해 개발했습니다.
 
-```
+## 실행 방법
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+    npm install
+    npm run dev
